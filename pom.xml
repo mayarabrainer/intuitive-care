@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cliniclife</groupId>
+    <groupId>com.intuitive.care</groupId>
     <artifactId>intuitive-care</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -15,14 +15,12 @@
     </properties>
 
     <dependencies>
-        <!-- Jsoup para Web Scraping -->
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.16.1</version>
         </dependency>
 
-        <!-- Apache Commons IO para manipulação de arquivos -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -35,7 +33,6 @@
             <version>2.0.29</version>
         </dependency>
 
-        <!-- OpenCSV para manipulação do CSV -->
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
@@ -43,6 +40,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>
