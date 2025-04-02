@@ -38,7 +38,9 @@ Extrair dados do PDF e transformá-los em um formato estruturado CSV.
 
 
 **Localização do código:**
-- A parte de Transformação de Dados foi implementada na pasta `intuitive-care`.
+- A parte de Transformação de Dados foi implementada na classe `DataTransformer`.
+- A parte de Extração dos dados do PDF foi implementada na classe `PdfScraper`.
+- Para realizar o fluxo de extração e transformação RUN `Application`.
 
 ---
 
@@ -75,7 +77,7 @@ A estrutura do projeto está organizada da seguinte forma:
 ## **Como Executar**
 
 ### **Pré-requisitos:**
-- Java 8 ou superior
+- Java 17 ou superior
 - MySQL 8 ou superior
 
 
@@ -93,12 +95,12 @@ A estrutura do projeto está organizada da seguinte forma:
     ```
 3. Execute o código Java para realizar o web scraping e transformação de dados:
     ```bash
-    java -jar intuitive-care/web_scraping.jar
+    java -jar intuitive-care.jar
     ```
 
 
 #### **2. Banco de Dados**
-1. Execute os scripts SQL para configurar as tabelas no banco de dados MySQL. Os scripts estão na pasta `/sql`.
+1. Execute os scripts SQL para configurar as tabelas no banco de dados MySQL. Os scripts estão na pasta `/scripts/step-3.sql`.
 2. Importe os arquivos CSV utilizando as queries de importação.
 3. Execute as consultas analíticas para obter as 10 operadoras com maiores despesas.
 
