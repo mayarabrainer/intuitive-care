@@ -1,4 +1,4 @@
-package com.cliniclife.scraping;
+package com.intuitive.care.scraping;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -8,8 +8,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.cliniclife.scraping.FileCompressor.compressFile;
-
 public class DataTransformer {
 
     private static final String TWO_OR_MORE_SPACES = "\\s{2,}";
@@ -18,13 +16,13 @@ public class DataTransformer {
     private static final String CSV_FILE = "downloads/Rol_de_Procedimentos.csv";
     private static final String ZIP_FILE = "downloads/Teste_Mayara.zip";
 
-    public static void main(String[] args) {
+    public void transform() {
         try {
             String pdfText = extractTextFromPDF();
 
             saveAsCSV(pdfText, CSV_FILE);
 
-            compressFile(CSV_FILE, ZIP_FILE);
+            FileCompressor.compressFile(CSV_FILE, ZIP_FILE);
 
             System.out.println("Process completed successfully! ✅");
 
