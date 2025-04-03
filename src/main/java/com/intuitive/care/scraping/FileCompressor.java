@@ -1,4 +1,4 @@
-package com.cliniclife.scraping;
+package com.intuitive.care.scraping;
 
 import java.io.*;
 import java.nio.file.*;
