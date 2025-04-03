@@ -1,4 +1,4 @@
-package com.cliniclife.scraping;
+package com.intuitive.care.scraping;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
-import static com.cliniclife.scraping.FileCompressor.compressFiles;
+import static com.intuitive.care.scraping.FileCompressor.compressFiles;
 
 public class PdfScraper {
 
@@ -17,12 +17,7 @@ public class PdfScraper {
     private static final String DOWNLOAD_DIRECTORY = "downloads/";
     private static final List<String> TARGET_FILES = List.of("Anexo_I", "Anexo_II");
 
-    public static void main(String[] args) {
-        PdfScraper scraper = new PdfScraper();
-        scraper.run();
-    }
-
-    public void run() {
+    public void extract() {
         createDownloadDirectory();
 
         try {
