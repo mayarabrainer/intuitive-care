@@ -7,11 +7,11 @@
 **Objetivo:**  
 Automatizar o processo de download de arquivos PDF (Anexos I e II) a partir de um site público e compactá-los em um único arquivo.
 
+![application](assets/application.gif)
 
 ## **Tecnologias Utilizadas**
 
 - **Java:** Utilizado para Web Scraping e Transformação de Dados.
-
 
 ### **Passos realizados:**
 - **Acesso ao site:** Foi feito o acesso ao site [https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos](https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos) para localizar os anexos.
